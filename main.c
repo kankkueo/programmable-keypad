@@ -1,6 +1,7 @@
 /* Keyboard example for Teensy USB Development Board
  * http://www.pjrc.com/teensy/usb_keyboard.html
  * Copyright (c) 2008 PJRC.COM, LLC
+ * Copyright (c) Elmo Kankkunen
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -58,8 +59,10 @@ struct keyset {
  */
 
 
+// Set desired key combinations here
 struct keyset presets[P_MAX][16] = {
     {
+        // Keys  length  modifier
         {{KEY_NUM_LOCK}, 1, 0},
         {{KEYPAD_1}, 1, 0},
         {{KEYPAD_2}, 1, 0},
@@ -96,22 +99,22 @@ struct keyset presets[P_MAX][16] = {
         {{KEY_P}, 1, KEY_LEFT_SHIFT},
     },
     {
-        {{KEY_A}, 1, KEY_LEFT_SHIFT},
-        {{KEY_B}, 1, KEY_LEFT_SHIFT},
-        {{KEY_C}, 1, KEY_LEFT_SHIFT},
-        {{KEY_D}, 1, KEY_LEFT_SHIFT},
-        {{KEY_E}, 1, KEY_LEFT_SHIFT},
-        {{KEY_F}, 1, KEY_LEFT_SHIFT},
-        {{KEY_G}, 1, KEY_LEFT_SHIFT},
-        {{KEY_H}, 1, KEY_LEFT_SHIFT},
-        {{KEY_LESS}, 1, 0},
-        {{KEY_LESS}, 1, KEY_LEFT_SHIFT},
-        {{KEY_LESS}, 1, KEY_RIGHT_ALT},
-        {{KEY_K}, 1, KEY_LEFT_SHIFT},
-        {{KEY_L}, 1, KEY_LEFT_SHIFT},
-        {{KEY_N}, 1, KEY_LEFT_SHIFT},
-        {{KEY_O}, 1, KEY_LEFT_SHIFT},
-        {{KEY_P}, 1, KEY_LEFT_SHIFT},
+        {{KEY_1}, 1, 0},
+        {{KEY_2}, 1, 0},
+        {{KEY_3}, 1, 0},
+        {{KEY_4}, 1, 0},
+        {{KEY_Q}, 1, 0},
+        {{KEY_W}, 1, 0},
+        {{KEY_E}, 1, 0},
+        {{KEY_R}, 1, 0},
+        {{KEY_A}, 1, 0},
+        {{KEY_S}, 1, 0},
+        {{KEY_D}, 1, 0},
+        {{KEY_F}, 1, 0},
+        {{KEY_Z}, 1, 0},
+        {{KEY_X}, 1, 0},
+        {{KEY_SPACE}, 1, 0},
+        {{KEY_ALT}, 1, 0},
     },
     {
         {{KEY_A}, 1, KEY_LEFT_SHIFT},
